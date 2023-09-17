@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DotNetBrowser.WinForms" Version="2.23.3" />
+  </ItemGroup>
+
 </Project>

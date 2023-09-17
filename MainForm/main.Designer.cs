@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_factory = new System.Windows.Forms.Button();
-            this.btn_prototype = new System.Windows.Forms.Button();
+            this.btn_abstractFactory = new System.Windows.Forms.Button();
             this.btn_abstract = new System.Windows.Forms.Button();
             this.btn_builder = new System.Windows.Forms.Button();
             this.btn_singleton = new System.Windows.Forms.Button();
@@ -45,14 +45,15 @@
             this.btn_factory.UseVisualStyleBackColor = true;
             this.btn_factory.Click += new System.EventHandler(this.btn_factory_Click);
             // 
-            // btn_prototype
+            // btn_abstractFactory
             // 
-            this.btn_prototype.Location = new System.Drawing.Point(67, 117);
-            this.btn_prototype.Name = "btn_prototype";
-            this.btn_prototype.Size = new System.Drawing.Size(105, 34);
-            this.btn_prototype.TabIndex = 1;
-            this.btn_prototype.Text = "Factory";
-            this.btn_prototype.UseVisualStyleBackColor = true;
+            this.btn_abstractFactory.Location = new System.Drawing.Point(67, 117);
+            this.btn_abstractFactory.Name = "btn_abstractFactory";
+            this.btn_abstractFactory.Size = new System.Drawing.Size(105, 34);
+            this.btn_abstractFactory.TabIndex = 1;
+            this.btn_abstractFactory.Text = "Abstract Factory";
+            this.btn_abstractFactory.UseVisualStyleBackColor = true;
+            this.btn_abstractFactory.Click += new System.EventHandler(this.btn_abstractFactory_Click);
             // 
             // btn_abstract
             // 
@@ -90,7 +91,7 @@
             this.Controls.Add(this.btn_singleton);
             this.Controls.Add(this.btn_builder);
             this.Controls.Add(this.btn_abstract);
-            this.Controls.Add(this.btn_prototype);
+            this.Controls.Add(this.btn_abstractFactory);
             this.Controls.Add(this.btn_factory);
             this.Name = "main";
             this.Text = "Bienvenido";
@@ -101,7 +102,7 @@
         #endregion
 
         private Button btn_factory;
-        private Button btn_prototype;
+        private Button btn_abstractFactory;
         private Button btn_abstract;
         private Button btn_builder;
         private Button btn_singleton;

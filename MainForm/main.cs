@@ -14,5 +14,11 @@ namespace DesignPatterns
             var factory = new Factory();
             factory.ShowDialog();
         }
+
+        private void btn_abstractFactory_Click(object sender, EventArgs e)
+        {
+            var abstractFactory = new AbstractFactory();
+            abstractFactory.ShowDialog();
+        }
     }
 }
