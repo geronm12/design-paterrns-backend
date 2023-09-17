@@ -7,6 +7,9 @@
     <Compile Update="CreationalPatternsForms\AbstractFactory\controls\WebBrowserCustom.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="CreationalPatternsForms\Builder\Builder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CreationalPatternsForms\Factory\Factory.cs">
       <SubType>Form</SubType>
     </Compile>

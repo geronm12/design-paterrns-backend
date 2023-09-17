@@ -20,5 +20,11 @@ namespace DesignPatterns
             var abstractFactory = new AbstractFactory();
             abstractFactory.ShowDialog();
         }
+
+        private void btn_builder_Click(object sender, EventArgs e)
+        {
+            var builder = new Builder();
+            builder.ShowDialog();
+        }
     }
 }

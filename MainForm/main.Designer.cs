@@ -30,7 +30,6 @@
         {
             this.btn_factory = new System.Windows.Forms.Button();
             this.btn_abstractFactory = new System.Windows.Forms.Button();
-            this.btn_abstract = new System.Windows.Forms.Button();
             this.btn_builder = new System.Windows.Forms.Button();
             this.btn_singleton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,23 +54,15 @@
             this.btn_abstractFactory.UseVisualStyleBackColor = true;
             this.btn_abstractFactory.Click += new System.EventHandler(this.btn_abstractFactory_Click);
             // 
-            // btn_abstract
-            // 
-            this.btn_abstract.Location = new System.Drawing.Point(67, 182);
-            this.btn_abstract.Name = "btn_abstract";
-            this.btn_abstract.Size = new System.Drawing.Size(105, 34);
-            this.btn_abstract.TabIndex = 2;
-            this.btn_abstract.Text = "Factory";
-            this.btn_abstract.UseVisualStyleBackColor = true;
-            // 
             // btn_builder
             // 
-            this.btn_builder.Location = new System.Drawing.Point(67, 254);
+            this.btn_builder.Location = new System.Drawing.Point(67, 182);
             this.btn_builder.Name = "btn_builder";
             this.btn_builder.Size = new System.Drawing.Size(105, 34);
-            this.btn_builder.TabIndex = 3;
-            this.btn_builder.Text = "Factory";
+            this.btn_builder.TabIndex = 2;
+            this.btn_builder.Text = "Builder";
             this.btn_builder.UseVisualStyleBackColor = true;
+            this.btn_builder.Click += new System.EventHandler(this.btn_builder_Click);
             // 
             // btn_singleton
             // 
@@ -90,7 +81,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_singleton);
             this.Controls.Add(this.btn_builder);
-            this.Controls.Add(this.btn_abstract);
             this.Controls.Add(this.btn_abstractFactory);
             this.Controls.Add(this.btn_factory);
             this.Name = "main";
@@ -103,7 +93,6 @@
 
         private Button btn_factory;
         private Button btn_abstractFactory;
-        private Button btn_abstract;
         private Button btn_builder;
         private Button btn_singleton;
     }
