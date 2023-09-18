@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvLeche = new System.Windows.Forms.DataGridView();
+            this.dgvLeche = new DesignPatterns.StructuralPatterns.Decorator.DgvCustom();
             this.cmbLeche = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,19 +41,19 @@
             this.dgvLeche.AllowUserToDeleteRows = false;
             this.dgvLeche.AllowUserToResizeColumns = false;
             this.dgvLeche.AllowUserToResizeRows = false;
-            this.dgvLeche.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.dgvLeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLeche.CausesValidation = false;
+            this.dgvLeche.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dgvLeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvLeche.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvLeche.Enabled = false;
             this.dgvLeche.Location = new System.Drawing.Point(12, 120);
+            this.dgvLeche.MultiSelect = false;
             this.dgvLeche.Name = "dgvLeche";
             this.dgvLeche.ReadOnly = true;
             this.dgvLeche.RowTemplate.Height = 25;
             this.dgvLeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLeche.Size = new System.Drawing.Size(407, 254);
             this.dgvLeche.TabIndex = 0;
-            this.dgvLeche.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLeche_CellClick);
-            this.dgvLeche.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLeche_CellContentClick);
-            this.dgvLeche.Click += new System.EventHandler(this.dgvLeche_Click);
             // 
             // cmbLeche
             // 
@@ -99,9 +99,28 @@
 
         #endregion
 
-        private DataGridView dgvLeche;
+        private DgvCustom dgvLeche;
         private ComboBox cmbLeche;
         private Button btnAgregar;
         private Label label1;
+
+
+        internal class DgvCustom : DataGridView
+        {
+            protected override void OnClick(EventArgs e)
+            {
+                base.OnClick(e);
+            }
+
+            protected override void OnGotFocus(EventArgs e)
+            {
+                base.OnGotFocus(e);
+            }
+
+            protected override void OnSelectionChanged(EventArgs e)
+            {
+                base.OnSelectionChanged(e);
+            }
+        }
     }
 }

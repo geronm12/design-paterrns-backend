@@ -17,6 +17,7 @@
             milks = new List<Milk>();
             cmbLeche.DataSource = decorators;
             dgvLeche.DataSource = milks;
+
         }
  
 
@@ -81,21 +82,6 @@
             public decimal CH { get; set; }
             public decimal Lactosa { get; set; }
             public MilkStates typeOfMilk { get; set; }
-        }
-
-        private void dgvLeche_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex == -1) return;
-        }
-
-        private void dgvLeche_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex == -1) return;
-        }
-
-        private void dgvLeche_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }
