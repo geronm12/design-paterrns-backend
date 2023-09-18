@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.CreationalPatternsForms;
+using DesignPatterns.StructuralPatterns;
 
 namespace DesignPatterns
 {
@@ -25,6 +26,12 @@ namespace DesignPatterns
         {
             var builder = new Builder();
             builder.ShowDialog();
+        }
+
+        private void btnDecorator_Click(object sender, EventArgs e)
+        {
+            var decorator = new Decorator();
+            decorator.ShowDialog();
         }
     }
 }

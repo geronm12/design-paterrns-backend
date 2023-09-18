@@ -12,4 +12,8 @@
     <PackageReference Include="DotNetBrowser.WinForms" Version="2.23.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="StructuralPatterns\Decorator\interfaces\" />
+  </ItemGroup>
+
 </Project>

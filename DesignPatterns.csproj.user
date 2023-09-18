@@ -16,5 +16,8 @@
     <Compile Update="MainForm\main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StructuralPatterns\Decorator\Decorator.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
